@@ -4,5 +4,5 @@ This is a challenge from Frontend mentor on building and interactive rating comp
 
 ### tech used
 
-I used React framewor, for sake of practicing, and Less preprocessor for styling
+I used React framework, for sake of practicing, and Less preprocessor for styling
 
