@@ -4,16 +4,21 @@ import Responce from "../pages/response";
 
 export default function Card(){
 
-    const [ isSubmitted, setIsSubmitted] = useState(false)
-    console.log(isSubmitted)
-
-    function flipCard(){
-        setIsSubmitted(prev => !prev)
-    }
+    const [ isSubmitted, setIsSubmitted ] = useState(false)
+    const [currRate, setCurrRate ] = useState(0)
+    console.log(currRate)
 
     return (
         <div className="card_component">
-            { isSubmitted ? <Responce /> : <Prompt submit={flipCard}/> }
+            { 
+                isSubmitted ? 
+                <Responce 
+                    rate={currRate}/> 
+                : 
+                <Prompt 
+                    submit={() => setIsSubmitted(prev => !prev)} 
+                    getRating={(e) => setCurrRate(e.target.innerHTML)}/> 
+            }
         </div>
     )
 }

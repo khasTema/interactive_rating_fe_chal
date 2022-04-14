@@ -16,7 +16,7 @@ export default function Prompt(props){
             to help us improve our offering!</p>
             <div className="rating">
                 {Array.apply(0, Array(5)).map(function (x, i) {
-                    return <Rating key={i + 1} number={i + 1} />;
+                    return <Rating key={i} number={i + 1} getRate={props.getRating}/>;
                 })}
             </div>
             <button className="submit" onClick={props.submit}>Submit</button>

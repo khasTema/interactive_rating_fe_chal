@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Rating(props) {
-    return <div className="rating_block" value={props.number}> {props.number} </div>
+    return <div className="rating_block" onClick={props.getRate}> {props.number} </div>
 }
