@@ -1,5 +1,6 @@
 import React from "react";
+import Card from "./components/Card";
 
 export default function App(){
-    return <h1>Hello React with webpack! And here some more...</h1>
+    return <Card />
 }
