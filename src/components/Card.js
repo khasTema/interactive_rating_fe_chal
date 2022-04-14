@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Prompt from "../pages/Prompt";
-import Responce from "../pages/response";
+import Responce from "../pages/Response";
 
 export default function Card(){
 
